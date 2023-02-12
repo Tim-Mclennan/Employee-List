@@ -67,6 +67,7 @@ That's it! You should now have a fully functioning version of the application ru
 ## User Features
 
 - Users can update, delete and retreive all employees.
+- Responive on mobiles, tablets and higher.
 
 ## Technical Features
 

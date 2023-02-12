@@ -1,0 +1,56 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.EmployeeCard {
+    margin: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 1px lightgrey solid;
+    max-width: 600px;
+    padding-top: 10px;
+
+    @media only screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__Content {
+
+        &__Header {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__Btns {
+        display: flex;
+
+        &__Edit {
+            background-color: initial;
+            border: none;
+            color: $main-colour;
+            font-size: 1.1rem;
+            padding-right: 9px;
+            font-weight: 600!important;
+            cursor: pointer;
+        }
+        &__Border {
+            border: 1px lightgrey solid;
+            height: 1.5rem;
+            @media only screen and (min-width: $tablet) {
+                margin: auto;
+            }
+        }
+        &__Remove {
+            background-color: initial;
+            border: none;
+            color: $main-colour;
+            font-size: 1.1rem;
+            margin-left: 6px;
+            font-weight: 600!important;
+            cursor: pointer;
+        }
+    }
+}

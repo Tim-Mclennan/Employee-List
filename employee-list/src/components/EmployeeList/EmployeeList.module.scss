@@ -1,0 +1,57 @@
+@import "../../scss/screen-sizes.scss";
+@import "../../scss/themes.scss";
+
+.EmployeeList {
+    width: 100%;
+
+    &__Header {
+        width: 100%;
+        background-color: $bg-colour;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+        @media only screen and (min-width: $tablet) {
+            padding-left: 80px;
+        }
+    }
+
+    &__Content {
+        @media only screen and (min-width: $tablet) {
+            padding-left: 80px;
+        }
+        &__AddEmployee {
+            margin: 15px 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            padding: 10px 2px;
+
+            @media only screen and (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &__Info {
+                font-size: 0.8rem;
+            }
+
+            &__Btn {
+                background-color: $main-colour;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 1rem;
+                padding: 10px 30px;
+                margin-top: 5px;
+
+            }
+        }
+    }
+
+}

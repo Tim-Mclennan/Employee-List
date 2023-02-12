@@ -1,5 +1,6 @@
 # Hi, I'm Tim! 👋
 
+![image](https://user-images.githubusercontent.com/102727510/218338910-2248ecd7-f421-421a-897e-c754030522ba.png)
 
 # Employee List
 
@@ -45,6 +46,7 @@ Before getting started, make sure you have the following software installed on y
 
 ### Back-end Installation (With Eclipse)
 ######    Note that these instructions may differ depending on your JDK.
+
    Import the back-end project into Eclipse:
     Go to File -> Import -> Maven -> Existing Maven Projects
     Select the directory employeelistServer and click "Finish"

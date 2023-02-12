@@ -9,20 +9,20 @@ The objective of creating this Employee List is for a challenge I have been assi
 
 ## The tech stack I used
 This is a fullstack application. The languages & libraries I have used in this project include:
-- Java Spring Boot
+- Java Spring Boot:
 Java Spring Boot is a powerful Java framework that makes it easy to develop high-performing, production-ready applications. Spring Boot provides a variety of features that make it easy to build, test, and deploy applications.
 
-- React
+- React:
 ReactJS is a popular JavaScript library for building user interfaces. It provides a virtual DOM that can update in real-time, making it an ideal choice for single-page applications.
 
-- TypeScript
+- TypeScript:
 TypeScript provides strong typing, making it easier to catch errors before they make it to production. 
 
-- SCSS
+- SCSS:
 With its ability to easily nest styles and write complex selectors, SCSS was the ideal choice for styling this application.
 
-- MySQL
-MySQL provides robust data storage and retrieval capabilities
+- MySQL:
+MySQL provides robust data storage and retrieval capabilities.
 
 
 ## How to run this app:

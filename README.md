@@ -1,6 +1,6 @@
 # Hi, I'm Tim! 👋
 
-![image](https://user-images.githubusercontent.com/102727510/218338910-2248ecd7-f421-421a-897e-c754030522ba.png)
+![image](https://user-images.githubusercontent.com/102727510/218339179-c7af7e50-be99-44a2-8e5e-24e0d6f8590a.png)
 
 # Employee List
 

@@ -4,7 +4,7 @@
 
 # Employee List
 
-The objective of creating this Employee List is for a challenge I have been assigned to by Digital.NSW. Starting with some configuration, users will be able to retrieve a list of employees as well as edit or remove them. I have organised the file structure of my proejct in a way that is clear to understand - one half is for the client side (React) and the other half for the server (Java SpringBoot). Below I have provided a list of the tech I used and how to run this app effectively.
+The objective of creating this Employee List is for a challenge I have been assigned to by Digital.NSW. Starting with some basic configuration, users will be able to retrieve a list of employees as well as edit or remove them. I have organised the file structure of my project in a way that is clear to understand - one half is for the client side (React) and the other half for the server (Java SpringBoot). Below I have provided a list of the tech I used and how to run this app effectively.
 
 
 ## The tech stack I used

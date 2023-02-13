@@ -81,6 +81,11 @@
             border-radius: 5px;
         }
     }
+    
+    &__Error {
+        font-size: 2rem;
+        color: red;
+    }
 }
 
 #numberNote {

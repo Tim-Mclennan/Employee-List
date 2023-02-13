@@ -5,6 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const EmployeeDetails = () => {
     const { id } = useParams();
+    const [errors, setErrors] = useState('');
 
     const [formData, setFormData] = useState({
         id: '',
@@ -53,15 +54,24 @@ const EmployeeDetails = () => {
         hoursPerWeek
     } = formData;
     axios.put(`/employees/${id}`, formData)
-        .then(res => {
-        console.log(res);
-        })
-        .catch(error => {
-        console.error(error);
-        })
         .then(() => {
             window.location.href = '/';
-        });
+        })
+        .catch((error) => {
+            if (error.response && error.response.status === 400) {
+              setErrors("Bad Request: Check if all the required fields are filled correctly.");
+            } else if (error.response.status === 401) {
+              setErrors("Unauthorized: You need to be logged in to perform this action.");
+            } else if (error.response.status === 403) {
+              setErrors("Forbidden: You do not have the necessary permissions to perform this action.");
+            } else if (error.response.status === 404) {
+              setErrors( "Not Found: The requested resource could not be found on the server.");
+            } else if (error.response.status === 500) {
+              setErrors("Server Error: There was a problem with the server, please try again later.");
+            } else {
+              setErrors("An error occurred, please try again later.");
+            }  
+          });
     };
 
   return (
@@ -135,6 +145,9 @@ const EmployeeDetails = () => {
                 </Link>    
             </div>
         </form> 
+        <div>
+          {errors ? <div className={styles.EmployeeDetails__Error}>{errors}</div> : null}
+        </div>
     </div>
   )
 };

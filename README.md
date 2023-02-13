@@ -29,6 +29,24 @@ MySQL provides robust data storage and retrieval capabilities.
 
 - Users can update, delete and retreive all employees.
 - Responsive on mobiles, tablets and higher.
+- Alerts user if there is an error of any type when trying to submit employee information to the backend. Example code snippet: 
+
+```
+if (status === 400) {
+        errorMessage = "Bad Request: Check if all the required fields are filled correctly.";
+        // get validation errors and loop through them to add to errorMessage
+      } else if (status === 401) {
+        errorMessage = "Unauthorized: You need to be logged in to perform this action.";
+      } else if (status === 403) {
+        errorMessage = "Forbidden: You do not have the necessary permissions to perform this action.";
+      } else if (status === 404) {
+        errorMessage = "Not Found: The requested resource could not be found on the server.";
+      } else if (status >= 500) {
+        errorMessage = "Server Error: There was a problem with the server, please try again later.";
+      } else {
+        errorMessage = "An error occurred, please try again later.";
+      }
+```
 
 ## Technical Features
 - Axios:
@@ -65,6 +83,7 @@ For Java, I wrote a integration tests that test the functionality and communicat
 
 Before getting started, make sure you have the following software installed on your system:
 
+    Vite (For React and Typescript)
     Node.js
     Google Chrome
     Visual Studio Code
@@ -82,13 +101,11 @@ Before getting started, make sure you have the following software installed on y
 ### Back-end Installation (With Eclipse)
 ######    Note that these instructions may differ depending on your JDK.
 
-    ```
    Import the back-end project into Eclipse:
     Go to File -> Import -> Maven -> Existing Maven Projects
     Select the directory employeelistServer and click "Finish"
     Right-click on the project in the Project Explorer and select "Run As" -> "Spring Boot App"
     The back-end server will now be running on http://localhost:8080
-    ```
 
 ### mySQL Configuration
 

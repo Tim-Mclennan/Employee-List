@@ -18,6 +18,8 @@ const AddEmployee = () => {
     hoursPerWeek: "",
   });
 
+  const [errors, setErrors] = useState('');
+
   const handleInputChange = (event: { target: { name: any; value: any; }; }) => {
     setFormData({
       ...formData,
@@ -47,7 +49,19 @@ const AddEmployee = () => {
         window.location.href = "/";
       })
       .catch((error) => {
-        console.error(error);
+        if (error.response && error.response.status === 400) {
+          setErrors("Bad Request: Check if all the required fields are filled correctly.");
+        } else if (error.response.status === 401) {
+          setErrors("Unauthorized: You need to be logged in to perform this action.");
+        } else if (error.response.status === 403) {
+          setErrors("Forbidden: You do not have the necessary permissions to perform this action.");
+        } else if (error.response.status === 404) {
+          setErrors( "Not Found: The requested resource could not be found on the server.");
+        } else if (error.response.status === 500) {
+          setErrors("Server Error: There was a problem with the server, please try again later.");
+        } else {
+          setErrors("An error occurred, please try again later.");
+        }  
       });
   };
 
@@ -121,6 +135,9 @@ const AddEmployee = () => {
                 </Link>    
             </div>
         </form> 
+        <div>
+          {errors ? <div className={styles.AddEmployee__Error}>{errors}</div> : null}
+        </div>
     </div>
   )
 }

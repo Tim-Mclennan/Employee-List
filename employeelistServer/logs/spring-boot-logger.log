@@ -136,3 +136,17 @@
 2023-02-13 13:59:40,916 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
 2023-02-13 13:59:40,918 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EmployeelistApplication in 0.778 seconds (JVM running for 101439.541)
 2023-02-13 13:59:40,919 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-13 14:26:30,436 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 14:26:30,439 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-13 14:26:30,444 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2023-02-13 14:26:30,560 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-1] Retrieved all employees successfully
+2023-02-13 14:26:31,642 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-2] Retrieved all employees successfully
+2023-02-13 14:26:31,790 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-3] Retrieved employee successfully with id of: 17
+2023-02-13 14:26:31,801 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-4] Retrieved employee successfully with id of: 17
+2023-02-13 14:26:37,226 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-6] Updated employee successfully with id of: 17
+2023-02-13 14:26:37,514 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-7] Retrieved all employees successfully
+2023-02-13 14:26:45,268 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-10] Retrieved all employees successfully
+2023-02-13 14:26:45,601 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-1] Retrieved employee successfully with id of: 17
+2023-02-13 14:26:45,610 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-2] Retrieved employee successfully with id of: 17
+2023-02-13 14:26:50,832 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-5] Updated employee successfully with id of: 17
+2023-02-13 14:26:51,445 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-6] Retrieved all employees successfully

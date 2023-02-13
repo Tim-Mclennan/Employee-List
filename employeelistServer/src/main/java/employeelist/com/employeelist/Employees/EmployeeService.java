@@ -22,9 +22,7 @@ public class EmployeeService {
 
     public List<EmployeeDTO> getAllEmployees() {
         List<Employee> employees = employeeRepository.findAll();
-        List<EmployeeDTO> employeeDTOs = employees.stream()
-                .map(employee -> modelMapper.map(employee, EmployeeDTO.class))
-                .collect(Collectors.toList());
+        List<EmployeeDTO> employeeDTOs = employees.stream() .map(employee -> modelMapper.map(employee, EmployeeDTO.class)).collect(Collectors.toList());
         return employeeDTOs;	
     }
 

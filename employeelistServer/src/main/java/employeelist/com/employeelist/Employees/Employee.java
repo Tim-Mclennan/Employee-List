@@ -49,9 +49,7 @@ public class Employee {
     
     
     //constructor so end user can create an employee:
-    public Employee(String firstName, String middleName, String lastname, String email, Long mobile,
-    				String ResidentialAddress, String contractType, String startDate, String endDate,
-    				String timeBasis, String hoursPerWeek) {
+    public Employee(String firstName, String middleName, String lastname, String email, Long mobile, String ResidentialAddress, String contractType, String startDate, String endDate, String timeBasis, String hoursPerWeek) {
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastname = lastname;
@@ -63,7 +61,8 @@ public class Employee {
 		this.endDate = endDate;
 		this.timeBasis = timeBasis;
 		this.hoursPerWeek = hoursPerWeek;
-}
+    }
+    
     // This constructor is to avoid any errors that Spring may bring up due to an "unfound" constructor method.
     public Employee() {}
     

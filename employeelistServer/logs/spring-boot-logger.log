@@ -12,3 +12,83 @@
 2023-02-13 08:40:29,867 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-10] Retrieved all employees successfully
 2023-02-13 08:40:29,923 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-2] Retrieved all employees successfully
 2023-02-13 08:40:32,849 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-4] Retrieved all employees successfully
+2023-02-13 08:45:33,388 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-5] Retrieved all employees successfully
+2023-02-13 08:45:45,646 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-7] Retrieved all employees successfully
+2023-02-13 08:47:05,950 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-9] Retrieved all employees successfully
+2023-02-13 08:47:26,357 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-10] Retrieved all employees successfully
+2023-02-13 08:48:39,128 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-4] Retrieved all employees successfully
+2023-02-13 08:48:40,720 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-3] Retrieved all employees successfully
+2023-02-13 08:48:40,874 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-6] Deleted employee successfully with id of: 14
+2023-02-13 08:48:41,717 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-7] Retrieved all employees successfully
+2023-02-13 08:48:57,933 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-9] Created a new employee
+2023-02-13 08:48:58,639 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-1] Retrieved all employees successfully
+2023-02-13 08:49:01,941 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-2] Deleted employee successfully with id of: 16
+2023-02-13 08:49:02,497 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-4] Retrieved all employees successfully
+2023-02-13 08:51:50,259 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-5] Retrieved all employees successfully
+2023-02-13 09:12:42,604 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-7] Retrieved all employees successfully
+2023-02-13 09:12:44,115 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-8] Retrieved employee successfully with id of: 15
+2023-02-13 09:12:44,142 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-9] Retrieved employee successfully with id of: 15
+2023-02-13 09:28:39,885 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-2] Retrieved all employees successfully
+2023-02-13 09:28:43,643 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-4] Retrieved all employees successfully
+2023-02-13 09:28:44,983 INFO employeelist.com.employeelist.Employees.EmployeeController [http-nio-8080-exec-5] Deleted employee successfully with id of: 15
+2023-02-13 11:44:14,596 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-13 11:44:15,249 INFO org.apache.juli.logging.DirectJDKLog [Thread-22] Pausing ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:44:15,262 INFO org.apache.juli.logging.DirectJDKLog [Thread-22] Stopping service [Tomcat]
+2023-02-13 11:44:15,304 INFO org.apache.juli.logging.DirectJDKLog [Thread-22] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-13 11:44:15,964 INFO org.apache.juli.logging.DirectJDKLog [Thread-22] Stopping ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:44:16,089 INFO org.apache.juli.logging.DirectJDKLog [Thread-22] Destroying ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:44:16,212 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-22] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13 11:44:16,277 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-7 - Shutdown initiated...
+2023-02-13 11:44:16,393 INFO com.zaxxer.hikari.HikariDataSource [Thread-22] HikariPool-7 - Shutdown completed.
+2023-02-13 11:44:18,055 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EmployeelistApplication using Java 17.0.5 on T with PID 22424 (C:\Users\timmc\Nology_Work\Employee List\employeelistServer\target\classes started by timmc in C:\Users\timmc\Nology_Work\Employee List\employeelistServer)
+2023-02-13 11:44:18,056 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-13 11:44:18,507 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-13 11:44:18,526 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2023-02-13 11:44:18,805 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-02-13 11:44:18,807 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:44:18,807 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-13 11:44:18,809 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-13 11:44:18,853 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-13 11:44:18,853 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 790 ms
+2023-02-13 11:44:18,971 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-13 11:44:18,986 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2023-02-13 11:44:19,041 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2023-02-13 11:44:19,043 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-02-13 11:44:19,227 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-13 11:44:19,227 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13 11:44:19,497 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-13 11:44:19,629 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-13 11:44:19,636 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:44:19,666 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-13 11:44:19,670 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EmployeelistApplication in 1.803 seconds (JVM running for 93318.294)
+2023-02-13 11:44:19,673 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-13 11:49:53,847 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-02-13 11:49:54,416 INFO org.apache.juli.logging.DirectJDKLog [Thread-29] Pausing ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:49:54,422 INFO org.apache.juli.logging.DirectJDKLog [Thread-29] Stopping service [Tomcat]
+2023-02-13 11:49:54,545 INFO org.apache.juli.logging.DirectJDKLog [Thread-29] Stopping ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:49:54,557 INFO org.apache.juli.logging.DirectJDKLog [Thread-29] Destroying ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:49:54,572 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-29] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13 11:49:57,314 INFO com.zaxxer.hikari.HikariDataSource [Thread-29] HikariPool-8 - Shutdown initiated...
+2023-02-13 11:49:57,419 INFO com.zaxxer.hikari.HikariDataSource [Thread-29] HikariPool-8 - Shutdown completed.
+2023-02-13 11:50:07,059 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EmployeelistApplication using Java 17.0.5 on T with PID 22424 (C:\Users\timmc\Nology_Work\Employee List\employeelistServer\target\classes started by timmc in C:\Users\timmc\Nology_Work\Employee List\employeelistServer)
+2023-02-13 11:50:07,060 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-13 11:50:07,270 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-13 11:50:07,281 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2023-02-13 11:50:07,434 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-02-13 11:50:07,435 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:50:07,435 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-02-13 11:50:07,435 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-13 11:50:07,452 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-13 11:50:07,453 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 388 ms
+2023-02-13 11:50:07,481 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-13 11:50:07,486 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Starting...
+2023-02-13 11:50:07,512 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Start completed.
+2023-02-13 11:50:07,514 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-02-13 11:50:07,578 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-13 11:50:07,578 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13 11:50:07,684 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-13 11:50:07,762 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-13 11:50:07,766 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-02-13 11:50:07,783 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-13 11:50:07,786 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EmployeelistApplication in 0.871 seconds (JVM running for 93666.409)
+2023-02-13 11:50:07,787 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

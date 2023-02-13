@@ -25,6 +25,30 @@ With its ability to easily nest styles and write complex selectors, SCSS was the
 MySQL provides robust data storage and retrieval capabilities.
 
 
+## User Features
+
+- Users can update, delete and retreive all employees.
+- Responsive on mobiles, tablets and higher.
+
+## Technical Features
+- Axios
+Set up a proxy in the package.json file ("proxy": "http://localhost:8080") which then allows me to use Get, Put and Delete methods more efficiently. This way I dont need to type out the entire local host address for every request, and also makes it more modular and easier to configure.
+
+- Logging:
+ Used Java's default logger to report on all CRUD methods that are executed in the API (Eg. logger.error("Employee not found: ", e)). This logs directly to the JDK console for the dev to keep track of what is happening. Additionally, I have also added a log file in 'employeelistServer/logs/spring-boot-logger.log' which keeps track of previous logs, if you would prefer to read it in a doc.
+
+- Error handling (In Java controller layer)
+Eg. logger.error("Employee not found: ", e);
+    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+- React hooks 
+- SCSS mixins (Preset variables for screen sizes and themes).
+- API manipulation.
+- Separation of domains/concerns
+- React Testing Library
+- Additionally, you can also test to make sure that the app is working by running 'npm run test' in the terminal of the client folder.
+
+
 ## How to run this app:
 ### Prerequisites
 
@@ -63,22 +87,6 @@ Note: If you encounter any issues during the installation process, please refer 
 
 That's it! You should now have a fully functioning version of the application running on your local machine. Enjoy!
 
-
-## User Features
-
-- Users can update, delete and retreive all employees.
-- Responive on mobiles, tablets and higher.
-
-## Technical Features
-
-- Error handling (In Java )
-- Logging (Using Java's default logger, The console will log messages for each appropriate CRUD method)
-- React hooks 
-- SCSS mixins (Preset variables for screen sizes and themes).
-- API manipulation.
-- Separation of domains/concerns
-- React Testing Library
-- Additionally, you can also test to make sure that the app is working by running 'npm run test' in the terminal of the client folder.
 
 ## Lessons Learned
 

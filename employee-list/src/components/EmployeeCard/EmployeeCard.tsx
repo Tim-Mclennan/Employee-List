@@ -42,7 +42,9 @@ interface Employee {
     <div className={styles.EmployeeCard}>
         <div className={styles.EmployeeCard__Content}>
             <p className={styles.EmployeeCard__Content__Header}>{employee && employee.firstName} {employee && employee.lastName}</p>
-            <p className={styles.EmployeeCard__Content__Contract}>{employee && employee.contractType}: {employee && employee.startDate} - {employee && employee.endDate}</p>
+            <p className={styles.EmployeeCard__Content__Contract}>{employee && employee.contractType}: 
+            <br></br>
+            {employee && employee.startDate} - {employee && employee.endDate}</p>
             <p className={styles.EmployeeCard__Content__Email}>{employee && employee.email} </p>
         </div>
         <div className={styles.EmployeeCard__Btns}>

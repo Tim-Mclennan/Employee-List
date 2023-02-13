@@ -26,30 +26,39 @@ public class EmployeeDTO {
     @Min(10)
     private Long mobile;
     
+    @NotBlank
     private String residentialAddress;
+    
+    @NotBlank
     private String contractType;
+    
+    @NotBlank
     private String startDate;
+    
+    @NotBlank
     private String endDate;
+    
+    @NotBlank
     private String timeBasis;
+    
+    @NotBlank
     private String hoursPerWeek;
 
     public EmployeeDTO() {}
 
-    public EmployeeDTO(Long id, String firstName, String middleName, String lastName, String email, Long mobile,
-                       String residentialAddress, String contractType, String startDate, String endDate,
-                       String timeBasis, String hoursPerWeek) {
+    public EmployeeDTO(Long id, String firstName, String middleName, String lastName, String email, Long mobile, String residentialAddress, String contractType, String startDate, String endDate, String timeBasis, String hoursPerWeek) {
         this.id = id;
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.email = email;
-        this.mobile = mobile;
-        this.residentialAddress = residentialAddress;
-        this.contractType = contractType;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.timeBasis = timeBasis;
-        this.hoursPerWeek = hoursPerWeek;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
+		this.email = email;
+		this.mobile = mobile;
+		this.residentialAddress = residentialAddress;
+		this.contractType = contractType;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.timeBasis = timeBasis;
+		this.hoursPerWeek = hoursPerWeek;
     }
 
     public Long getId() {

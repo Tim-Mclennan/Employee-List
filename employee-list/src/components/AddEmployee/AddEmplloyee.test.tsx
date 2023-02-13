@@ -1,5 +1,8 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
+import axios from "axios";
 import AddEmployee from "./AddEmployee";
+
+jest.mock("axios");
 
 export const renderForm = (mockData: any) => (
     <AddEmployee />
@@ -88,5 +91,35 @@ export const renderForm = (mockData: any) => (
       const { getByText } = renderResult;
       const submitButton = getByText("Submit");
       expect(submitButton).toBeInTheDocument();
+      });
+      
+      it("submits the form data via axios", async () => {
+        // arrange
+        const formData = {
+          firstName: "John",
+          lastName: "Doe",
+          email: "john.doe@example.com",
+          mobile: "1234567890",
+        };
+        const postSpy = jest.spyOn(axios, "post");
+        postSpy.mockResolvedValue({});
+    
+        // act
+        const { getByLabelText, getByText } = render(<AddEmployee />);
+        const firstNameInput = getByLabelText("First Name:");
+        const lastNameInput = getByLabelText("Last Name:");
+        const emailInput = getByLabelText("Email:");
+        const mobileInput = getByLabelText("Mobile Number:");
+        const submitButton = getByText("Submit");
+    
+        fireEvent.change(firstNameInput, { target: { value: formData.firstName } });
+        fireEvent.change(lastNameInput, { target: { value: formData.lastName } });
+        fireEvent.change(emailInput, { target: { value: formData.email } });
+        fireEvent.change(mobileInput, { target: { value: formData.mobile } });
+        fireEvent.click(submitButton);
+    
+        // assert
+        await new Promise(resolve => setTimeout(resolve));
+        expect(postSpy).toHaveBeenCalledWith("/employees", formData);
       });
 });

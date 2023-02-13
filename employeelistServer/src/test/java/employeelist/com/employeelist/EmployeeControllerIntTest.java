@@ -29,41 +29,28 @@ public class EmployeeControllerIntTest {
 
     @Test
     public void testGetAllEmployees() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/employees"))
-               .andExpect(status().isOk());
+        mockMvc.perform(MockMvcRequestBuilders.get("/employees")).andExpect(status().isOk());
     }
 
     @Test
     public void testGetEmployeeById() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/employees/1"))
-               .andExpect(status().isOk());
+        mockMvc.perform(MockMvcRequestBuilders.get("/employees/1")).andExpect(status().isOk());
     }
 
     @Test
     public void testAddEmployee() throws Exception {
         EmployeeDTO employeeDTO = new EmployeeDTO();
-        // set the employee details here
-
-        mockMvc.perform(MockMvcRequestBuilders.post("/employees")
-                                              .contentType(MediaType.APPLICATION_JSON)
-                                              .content(objectMapper.writeValueAsString(employeeDTO)))
-               .andExpect(status().isCreated());
+        mockMvc.perform(MockMvcRequestBuilders.post("/employees").contentType(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(employeeDTO))).andExpect(status().isCreated());
     }
 
     @Test
     public void testUpdateEmployee() throws Exception {
         EmployeeDTO employeeDTO = new EmployeeDTO();
-        // set the employee details here
-
-        mockMvc.perform(MockMvcRequestBuilders.put("/employees/1")
-                                              .contentType(MediaType.APPLICATION_JSON)
-                                              .content(objectMapper.writeValueAsString(employeeDTO)))
-               .andExpect(status().isOk());
+      mockMvc.perform(MockMvcRequestBuilders.put("/employees/1").contentType(MediaType.APPLICATION_JSON).content(objectMapper.writeValueAsString(employeeDTO))).andExpect(status().isOk());
     }
 
     @Test
     public void testDeleteEmployee() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.delete("/employees/1"))
-               .andExpect(status().isNoContent());
+        mockMvc.perform(MockMvcRequestBuilders.delete("/employees/1")).andExpect(status().isNoContent());
     }
 }

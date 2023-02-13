@@ -12,7 +12,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import employeelist.com.employeelist.Employees.EmployeeDTO;
-import employeelist.com.employeelist.Employees.EmployeeRepository;
 import employeelist.com.employeelist.Employees.EmployeeService;
 
 @RunWith(SpringRunner.class)
@@ -57,7 +56,6 @@ public class EmployeeServiceIntTest {
     public void testGetAllEmployees() {
         EmployeeDTO savedEmployeeDTO1 = employeeService.addEmployee(employeeDTO1);
         EmployeeDTO savedEmployeeDTO2 = employeeService.addEmployee(employeeDTO2);
-
         List<EmployeeDTO> employeeDTOs = employeeService.getAllEmployees();
         assertThat(employeeDTOs).hasSize(2);
         assertThat(employeeDTOs).contains(savedEmployeeDTO1, savedEmployeeDTO2);
@@ -74,8 +72,7 @@ public class EmployeeServiceIntTest {
 	@Test
 	public void testUpdateEmployee() {
 	    EmployeeDTO savedEmployeeDTO1 = employeeService.addEmployee(employeeDTO1);
-	    savedEmployeeDTO1.setFirstName("Jane");
-	
+	    savedEmployeeDTO1.setFirstName("Jane");	
 	    EmployeeDTO updatedEmployeeDTO = employeeService.updateEmployee(null, savedEmployeeDTO1);
 	    assertThat(updatedEmployeeDTO.getFirstName()).isEqualTo("Jane");
 	}
@@ -83,8 +80,7 @@ public class EmployeeServiceIntTest {
 	@Test
 	public void testDeleteEmployee() {
 	    EmployeeDTO savedEmployeeDTO1 = employeeService.addEmployee(employeeDTO1);
-	    employeeService.deleteEmployee(savedEmployeeDTO1.getId());
-	
+	    employeeService.deleteEmployee(savedEmployeeDTO1.getId());	
 	    EmployeeDTO foundEmployeeDTO = employeeService.getEmployeeById(savedEmployeeDTO1.getId());
 	    assertThat(foundEmployeeDTO).isNull();
 	}

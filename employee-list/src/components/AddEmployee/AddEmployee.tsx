@@ -21,10 +21,7 @@ const AddEmployee = () => {
   const [errors, setErrors] = useState('');
 
   const handleInputChange = (event: { target: { name: any; value: any; }; }) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
+    setFormData({...formData, [event.target.name]: event.target.value, });
   };
 
   const handleFormSubmit = (event: { preventDefault: () => void; }) => {

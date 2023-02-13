@@ -37,9 +37,17 @@ Set up a proxy in the package.json file ("proxy": "http://localhost:8080") which
 - Logging:
  Used Java's default logger to report on all CRUD methods that are executed in the API (Eg. logger.error("Employee not found: ", e)). This logs directly to the JDK console for the dev to keep track of what is happening. Additionally, I have also added a log file in 'employeelistServer/logs/spring-boot-logger.log' which keeps track of previous logs, if you would prefer to read it in a doc.
 
-- Error handling (In Java controller layer):
-Eg. logger.error("Employee not found: ", e);
-    return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+- Error handling:
+I performed this in the SPringBoot controller layer. For example: 
+```
+catch (NoSuchElementException e) {
+            logger.error("Employee not found: ", e);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            logger.error("Error while retrieving employees: ", e);
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+```
 
 - Testing:
 For Java, I wrote a integration tests that test the functionality and communication of my controller and service layers. This can be accessed at 'employeelistServer\src\test\java\employeelist\com\employeelist\EmployeeControllerIntTest.java'. This integration test can be run via the command 'mvn test'.

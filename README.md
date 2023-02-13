@@ -82,11 +82,13 @@ Before getting started, make sure you have the following software installed on y
 ### Back-end Installation (With Eclipse)
 ######    Note that these instructions may differ depending on your JDK.
 
+    ```
    Import the back-end project into Eclipse:
     Go to File -> Import -> Maven -> Existing Maven Projects
     Select the directory employeelistServer and click "Finish"
     Right-click on the project in the Project Explorer and select "Run As" -> "Spring Boot App"
     The back-end server will now be running on http://localhost:8080
+    ```
 
 ### mySQL Configuration
 
@@ -113,6 +115,6 @@ I love solving problems and continuously teaching myself new concepts. I have gr
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Tim-Mclennan/My-Portfolio)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://tim-mclennan.github.io/My-Portfolio/#)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tim-mclennan-0563341aa/)
 

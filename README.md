@@ -31,22 +31,25 @@ MySQL provides robust data storage and retrieval capabilities.
 - Responsive on mobiles, tablets and higher.
 
 ## Technical Features
-- Axios
+- Axios:
 Set up a proxy in the package.json file ("proxy": "http://localhost:8080") which then allows me to use Get, Put and Delete methods more efficiently. This way I dont need to type out the entire local host address for every request, and also makes it more modular and easier to configure.
 
 - Logging:
  Used Java's default logger to report on all CRUD methods that are executed in the API (Eg. logger.error("Employee not found: ", e)). This logs directly to the JDK console for the dev to keep track of what is happening. Additionally, I have also added a log file in 'employeelistServer/logs/spring-boot-logger.log' which keeps track of previous logs, if you would prefer to read it in a doc.
 
-- Error handling (In Java controller layer)
+- Error handling (In Java controller layer):
 Eg. logger.error("Employee not found: ", e);
     return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+- Testing:
+For Java, I wrote a integration tests that test the functionality and communication of my controller and service layers. This can be accessed at 'employeelistServer\src\test\java\employeelist\com\employeelist\EmployeeControllerIntTest.java'. This integration test can be run via the command 'mvn test'.
 
 - React hooks 
 - SCSS mixins (Preset variables for screen sizes and themes).
 - API manipulation.
 - Separation of domains/concerns
-- React Testing Library
-- Additionally, you can also test to make sure that the app is working by running 'npm run test' in the terminal of the client folder.
+- React Testing Library:
+ you can test to make sure that the app is working by running 'npm run test' in the terminal of the client folder.
 
 
 ## How to run this app:

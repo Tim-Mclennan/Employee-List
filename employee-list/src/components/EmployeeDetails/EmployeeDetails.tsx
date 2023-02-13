@@ -107,7 +107,6 @@ const EmployeeDetails = () => {
             placeholder="Middle Name"
             value={formData.middleName}
             onChange={handleInputChange}
-            required
             />
 
             <label htmlFor="lastName">Last Name:</label>

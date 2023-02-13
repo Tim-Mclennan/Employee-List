@@ -68,7 +68,9 @@ catch (NoSuchElementException e) {
 ```
 
 - Testing:
-For Java, I wrote a integration tests that test the functionality and communication of my controller and service layers. This can be accessed at 'employeelistServer\src\test\java\employeelist\com\employeelist\EmployeeControllerIntTest.java'. This integration test can be run via the command 'mvn test'.
+For Java, I wrote a integration tests that test the functionality and communication of my controller and service layers. This can be accessed at 'employeelistServer\src\test\java\employeelist\com\employeelist\EmployeeControllerIntTest.java'. This integration test can be run via the command 'mvn test'. Please note that you will need to download maven to run this test in your terminal.
+
+Furtheremore, I also wrote Vitest tests in my React components using the React Testing Library. These tests can be run using 'npm run test'.
 
 - React hooks 
 - SCSS mixins (Preset variables for screen sizes and themes).

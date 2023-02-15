@@ -50,7 +50,7 @@ if (status === 400) {
 
 ## Technical Features
 - Axios:
-Set up a proxy in the package.json file ("proxy": "http://localhost:8080") which then allows me to use Get, Put and Delete methods more efficiently. This way I dont need to type out the entire local host address for every request, and also makes it more modular and easier to configure.
+Set up a proxy in the package.json file ("proxy": "http://localhost:8080") which then allows me to use Get, Put and Delete methods more efficiently. This way I dont need to type out the entire local host address for every request, and also makes it more modular and easier to configure. Subsequently, I was able to use built-in Axios methods (Get, Put, Post and Delete) to render data within each component accordingly.
 
 - Logging:
  Used Java's default logger to report on all CRUD methods that are executed in the API (Eg. logger.error("Employee not found: ", e)). This logs directly to the JDK console for the dev to keep track of what is happening. Additionally, I have also added a log file in 'employeelistServer/logs/spring-boot-logger.log' which keeps track of previous logs, if you would prefer to read it in a doc.
